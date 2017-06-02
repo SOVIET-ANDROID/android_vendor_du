@@ -84,5 +84,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 # Google sounds
 include vendor/du/google/GoogleAudio.mk
 
-# include definitions for SDCLANG
-include device/qcom/common/sdclang/sdclang.mk
+# Include SDCLANG definitions if it is requested and available
+ifeq ($(HOST_OS),linux)
+    ifneq ($(wildcard vendor/qcom/sdclang-3.8/),)
+        include vendor/carbon/sdclang/sdclang.mk
+    endif
+endif
