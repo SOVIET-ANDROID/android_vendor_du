@@ -83,3 +83,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
 # Google sounds
 include vendor/du/google/GoogleAudio.mk
+
+# include definitions for SDCLANG
+include device/qcom/common/sdclang/sdclang.mk
