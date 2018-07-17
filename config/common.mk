@@ -86,7 +86,7 @@ include vendor/du/google/GoogleAudio.mk
 
 # Include SDCLANG definitions if it is requested and available
 ifeq ($(HOST_OS),linux)
-    ifneq ($(wildcard vendor/qcom/sdclang-3.8/),)
+    ifneq ($(wildcard vendor/qcom/sdclang-4.0/),)
         include vendor/carbon/sdclang/sdclang.mk
     endif
 endif
