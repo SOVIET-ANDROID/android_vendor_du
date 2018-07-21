@@ -15,9 +15,9 @@
 SDCLANG ?= true
 SDCLANG_FORCED ?= false
 
-SDCLANG_PATH := vendor/qcom/sdclang-4.0/linux-x86/bin
+SDCLANG_PATH := vendor/qcom/sdclang-6.0/linux-x86/bin
 
-SDCLANG_LTO_DEFS := vendor/carbon/sdclang/sdllvm-lto-defs.mk
+SDCLANG_LTO_DEFS := vendor/du/sdclang/sdllvm-lto-defs.mk
 
 SDCLANG_COMMON_FLAGS := -O3 -fvectorize -mllvm -polly-run-dce
 ifeq (user,$(TARGET_BUILD_VARIANT))
